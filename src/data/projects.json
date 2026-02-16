@@ -1,0 +1,101 @@
+[
+  {
+    "title": "Emotion Recognition",
+    "imgs": [
+      {
+        "name": "Use your own photos or pick from Examples",
+        "src": "er1.png"
+      },
+      {
+        "name": "Works with videos, too",
+        "src": "er2.png"
+      },
+      { "name": "Recognize Live from your Web Camera", "src": "er3.png" }
+    ],
+    "website": "https://emotion-recognition.up.railway.app/",
+    "repo": "https://github.com/MaksymShcherbak/emotion_recognition_web",
+    "tags": ["Web", "AI", "FullStack"],
+    "tech": ["Python", "Tensorflow/Keras", "OpenCV", "Flask", "React"],
+    "description": "Classify emotions from photos and videos or try live recognition!",
+    "points": [
+      "Uses three trained neural network models for recognition, and a separate OpenCV model for detecting faces",
+      "Simple, intuitive UI allows the user to classify emotions from different sources."
+    ]
+  },
+  {
+    "title": "Semantic Segmentation",
+    "imgs": [
+      {
+        "name": "Test out a drone image using 4 different models",
+        "src": "ss1.png"
+      },
+      {
+        "name": "Learn about different Neural Network architectures",
+        "src": "ss2.png"
+      },
+      {
+        "name": "Compare prediction performance",
+        "src": "ss3.png"
+      }
+    ],
+    "website": "https://semanticsegmentationweb-production.up.railway.app/",
+    "repo": "https://github.com/MaksymShcherbak/semantic_segmentation_web",
+    "tags": ["Web", "AI", "FullStack"],
+    "tech": ["Python", "Tensorflow/Keras", "Flask"],
+    "description": "Explore different Neural Networks in the task of classifying different objects from drone photographs.",
+    "points": [
+      "Analyzes images using 4 different neural network architectures and a baseline model.",
+      "Provides visualizations and numeric values for comparison."
+    ]
+  },
+  {
+    "title": "Pride Kitchen",
+    "imgs": [
+      {
+        "name": "Merge Pride Flags, generating unique combinations",
+        "src": "pk1.png"
+      },
+      {
+        "name": "A collection of 20+ flags of different identities",
+        "src": "pk2.png"
+      },
+      {
+        "name": "Existing customization options",
+        "src": "pk3.png"
+      }
+    ],
+    "website": "https://pride-kitchen.netlify.app/",
+    "repo": "https://github.com/MaksymShcherbak/pride_kitchen",
+    "tags": ["Web"],
+    "tech": ["Rust", "Dioxus"],
+    "description": "Mix & Match various pride flags and challenge your creativity.",
+    "points": [
+      "Allows users to creatively combine over 20 different flags.",
+      "Built with Rust and Dioxus for fast, responsive and stable experience.",
+      "Multiple customization options and export functionality."
+    ]
+  },
+  {
+    "title": "Events Khmelnytskyi",
+    "imgs": [
+      {
+        "name": "Fetches data from many different sources",
+        "src": "ev1.png"
+      },
+      {
+        "name": "Creates a global feed with caching functionality",
+        "src": "ev2.png"
+      },
+      { "name": "Uses keyword-based filtering", "src": "ev3.png" }
+    ],
+    "website": null,
+    "repo": null,
+    "tags": ["Web", "Web Scraping", "FullStack", "Database"],
+    "tech": ["NodeJS", "Pug", "MongoDB"],
+    "description": "This website scrapes events from various open sources, creating a global feed of cultural data. I use it to find and post news in a <a href='https://t.me/khmculture' target='_blank' class='text-blue-600'>cultural telegram channel</a>.",
+    "points": [
+      "Fetches data from 15+ web sources, reducing manual work required to find the event information.",
+      "Uses database for caching and organizing data, making website reloads significantly faster."
+    ]
+  }
+]

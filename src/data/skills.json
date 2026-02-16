@@ -1,0 +1,43 @@
+{
+  "soft": [
+    "Creativity",
+    "Problem Solving",
+    "Teamwork",
+    "Adaptability",
+    "Communication",
+    "Attention to Detail"
+  ],
+  "hard": [
+    "System Design",
+    "Refactoring",
+    "Debugging",
+    "Database Design",
+    "Full-Stack Web Development",
+    "Desktop Development",
+    "Machine Learning and Neural Networks",
+    "GameDev",
+    "API Development"
+  ],
+  "tech": [
+    "Rust",
+    "C#",
+    "JavaScript",
+    "TypeScript",
+    "HTML/CSS",
+    "NodeJS",
+    "Python",
+    "Tensorflow/Keras",
+    "SQL",
+    "MongoDB",
+    "React",
+    "Next.js",
+    "Tailwind CSS",
+    "Figma",
+    "PHP",
+    "Unity",
+    "Unreal Engine 5",
+    "Bevy",
+    "Linux",
+    "Git"
+  ]
+}
