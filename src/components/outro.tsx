@@ -6,8 +6,8 @@ export default function Outro() {
       <div className="text-1lg md:text-xl">
         <p className="pb-5">Thank you for exploring my work!</p>
         <p className="pb-2">
-          📧 I am currently open to <b>Junior / Entry-Level Full-Stack</b>{" "}
-          roles, remote or in the Czech Republic, and I am also happy to
+          📧 I am currently open to <b>Junior / Entry-Level Full-Stack</b> or
+          Backend roles, remote or in the Czech Republic, and I am also happy to
           consider <b>other development opportunities that match my skills</b>.
         </p>
         <p>
