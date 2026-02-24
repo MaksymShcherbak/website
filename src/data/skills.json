@@ -1,43 +1,44 @@
 {
   "soft": [
-    "Creativity",
     "Problem Solving",
     "Teamwork",
+    "Creativity",
     "Adaptability",
     "Communication",
     "Attention to Detail"
   ],
   "hard": [
+    "Full-Stack Web Development",
+    "Machine Learning and Neural Networks",
+    "API Development",
     "System Design",
     "Refactoring",
     "Debugging",
     "Database Design",
-    "Full-Stack Web Development",
-    "Desktop Development",
-    "Machine Learning and Neural Networks",
-    "GameDev",
-    "API Development"
+    "Testing",
+    "Deploying"
   ],
   "tech": [
-    "Rust",
-    "C#",
     "JavaScript",
     "TypeScript",
     "HTML/CSS",
+    "React",
+    "Next.js",
+    "Tailwind CSS",
     "NodeJS",
     "Python",
     "Tensorflow/Keras",
     "SQL",
     "MongoDB",
-    "React",
-    "Next.js",
-    "Tailwind CSS",
-    "Figma",
+    "Rust",
+    "C#",
     "PHP",
+    "Java",
+    "Figma",
     "Unity",
     "Unreal Engine 5",
-    "Bevy",
     "Linux",
-    "Git"
+    "Git",
+    "Docker"
   ]
 }

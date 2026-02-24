@@ -22,5 +22,6 @@
   "Tensorflow/Keras": "tf.png",
   "TypeScript": "ts.png",
   "Unreal Engine 5": "ue5.webp",
-  "Unity": "unity.png"
+  "Unity": "unity.png",
+  "Docker": "docker.svg"
 }

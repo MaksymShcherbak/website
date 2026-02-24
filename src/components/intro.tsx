@@ -34,13 +34,14 @@ export default function Intro() {
     </>,
     <>
       My primary focus is <b>Full-Stack Web Development</b>, with additional
-      experience in <b>AI systems</b>, <b>Databases</b>, <b>GameDev</b> and
-      performance-oriented applications.
+      experience in <b>AI systems</b>, <b>Databases</b> and performance-oriented
+      applications.
     </>,
     <>
       I enjoy building clear and maintainable software. Always trying to
-      approach problems with thoughtful, elegant and practical solutions. I work
-      with a variety of programming languages, and my preferred ones are{" "}
+      approach problems with thoughtful, elegant and practical solutions that
+      benefit users. I work with a variety of programming languages, and my
+      preferred ones are{" "}
       <Image
         src="/icons/rust.png"
         width={20}
