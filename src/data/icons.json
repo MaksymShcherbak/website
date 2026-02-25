@@ -23,5 +23,6 @@
   "TypeScript": "ts.png",
   "Unreal Engine 5": "ue5.webp",
   "Unity": "unity.png",
-  "Docker": "docker.svg"
+  "Docker": "docker.svg",
+  "Java": "java.png"
 }
