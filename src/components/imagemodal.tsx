@@ -3,13 +3,19 @@
 import Image from "next/image";
 import { X } from "lucide-react";
 import { GalleryImage } from "@/data/data";
+import { Locale } from "@/lib/i18n";
 
 interface ImageModalProps {
   img: GalleryImage;
+  locale: Locale;
   closeModal: () => void;
 }
 
-export default function ImageModal({ img, closeModal }: ImageModalProps) {
+export default function ImageModal({
+  img,
+  locale,
+  closeModal,
+}: ImageModalProps) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       <div
@@ -33,7 +39,7 @@ export default function ImageModal({ img, closeModal }: ImageModalProps) {
         >
           <Image
             src={`/gallery/${img.src}`}
-            alt={img.name}
+            alt={img.name[locale]}
             fill
             className="object-cover object-top"
             priority
@@ -41,7 +47,7 @@ export default function ImageModal({ img, closeModal }: ImageModalProps) {
         </div>
 
         <h1 className="mt-4 text-xl sm:text-xl md:text-2xl font-bold text-white text-center pointer-events-auto">
-          {img.name}
+          {img.name[locale]}
         </h1>
       </div>
     </div>

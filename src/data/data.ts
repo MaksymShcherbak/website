@@ -1,22 +1,27 @@
+interface LocalizedText {
+  en: string;
+  cz: string;
+}
+
 export interface Project {
-  title: string;
+  title: LocalizedText;
   imgs: GalleryImage[];
   website: string | null;
   repo: string | null;
   tags: string[];
   tech: string[];
-  description: string;
-  points: string[];
+  description: LocalizedText;
+  points: LocalizedText[];
 }
 
 export interface GalleryImage {
-  name: string; 
+  name: LocalizedText;
   src: string;
 }
 
 export interface Skills {
-  soft: string[];
-  hard: string[];
+  soft: LocalizedText[];
+  hard: LocalizedText[];
   tech: string[];
 }
 

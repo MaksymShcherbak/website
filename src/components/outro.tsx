@@ -1,23 +1,27 @@
 import Image from "next/image";
+import { Locale, t } from "@/lib/i18n";
 
-export default function Outro() {
+type OutroProps = {
+  locale: Locale;
+};
+
+export default function Outro({ locale }: OutroProps) {
   return (
     <div className="flex flex-col md:flex-row items-center gap-6">
       <div className="text-1lg md:text-xl">
-        <p className="pb-5">Thank you for exploring my work!</p>
-        <p className="pb-2">
-          📧 I am currently open to Entry-Level <b>Web/Software Development</b>{" "}
-          roles, remote or in the Czech Republic, and I am also happy to
-          consider <b>other development opportunities that match my skills</b>.
-        </p>
+        <p className="pb-5">{t(locale, "thankYou")}</p>
+        <p
+          className="pb-2"
+          dangerouslySetInnerHTML={{ __html: t(locale, "openToRoles") }}
+        ></p>
         <p>
-          Feel free to reach out via{" "}
+          {t(locale, "feelFree")}
           <span className="text-neutral-500 underline decoration-dotted">
             <a href="mailto:maxim.shherbak@gmail.com">
               maxim.shherbak@gmail.com
             </a>
           </span>{" "}
-          or{" "}
+          {t(locale, "or")}
           <span className="text-neutral-500 underline decoration-dotted">
             <a
               href="https://www.linkedin.com/in/maksym-shcherbak-11159b3a7/"
@@ -29,9 +33,7 @@ export default function Outro() {
           </span>
           .
         </p>
-        <p className="pt-2">
-          I look forward to connecting and contributing to your projects!
-        </p>
+        <p className="pt-2">{t(locale, "connect")}</p>
       </div>
       <div className="w-full max-w-md mx-auto">
         <Image

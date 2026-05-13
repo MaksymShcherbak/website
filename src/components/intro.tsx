@@ -2,8 +2,13 @@
 
 import Image from "next/image";
 import { useState, useEffect, useLayoutEffect } from "react";
+import { Locale, t } from "@/lib/i18n";
 
-export default function Intro() {
+type IntroProps = {
+  locale: Locale;
+};
+
+export default function Intro({ locale }: IntroProps) {
   const [mounted, setMounted] = useState(false);
   const [visibleIndex, setVisibleIndex] = useState(-1);
 
@@ -28,20 +33,20 @@ export default function Intro() {
   }, [mounted]);
 
   const paragraphs = [
+    <span
+      key="intro-1"
+      dangerouslySetInnerHTML={{ __html: t(locale, "introParagraph1") }}
+    />,
+    <span
+      key="intro-2"
+      dangerouslySetInnerHTML={{ __html: t(locale, "introParagraph2") }}
+    />,
+    <span
+      key="intro-2"
+      dangerouslySetInnerHTML={{ __html: t(locale, "introParagraph3") }}
+    />,
     <>
-      Hi! I am a Ukrainian Software Developer with <b>Master&apos;s Degree</b>{" "}
-      🎓, currently based in the Czech Republic 🇨🇿.
-    </>,
-    <>
-      My primary focus is <b>Full-Stack Web Development</b>, with additional
-      experience in <b>AI systems</b>, <b>Databases</b> and performance-oriented
-      applications.
-    </>,
-    <>
-      I enjoy building clear and maintainable software. Always trying to
-      approach problems with thoughtful, elegant and practical solutions that
-      benefit users. I work with a variety of programming languages, and my
-      preferred ones are{" "}
+      {t(locale, "introParagraph4pre")}
       <Image
         src="/icons/rust.png"
         width={20}
@@ -49,7 +54,7 @@ export default function Intro() {
         alt="Rust"
         className="inline-block mr-1"
       />
-      <b>Rust</b> and{" "}
+      <b>Rust</b> {" / "}
       <Image
         src="/icons/ts.png"
         width={20}
@@ -57,7 +62,8 @@ export default function Intro() {
         alt="TypeScript"
         className="inline-block mr-1"
       />
-      <b>TypeScript</b> for their strong type safety and reliability.
+      <b>TypeScript</b>
+      {t(locale, "introParagraph4post")}
     </>,
   ];
 
@@ -130,12 +136,9 @@ export default function Intro() {
 
       <div className="max-w-2xl mx-6 text-neutral-700 dark:text-neutral-300 space-y-3 text-base md:text-lg leading-relaxed text-justify">
         <h1 className="text-2xl md:text-5xl font-bold mb-2">
-          Maksym Shcherbak 🇺🇦
+          Maksym Shcherbak 🇺🇦 🇨🇿
         </h1>
-        <h2>
-          Software Engineer | Full-Stack Web Development | JS, TS, Rust, Python,
-          C#
-        </h2>
+        <h2>{t(locale, "introHeading")}</h2>
         <p className="text-lg text-neutral-500 mb-4 underline decoration-dotted">
           <a href="mailto:maxim.shherbak@gmail.com">maxim.shherbak@gmail.com</a>
         </p>

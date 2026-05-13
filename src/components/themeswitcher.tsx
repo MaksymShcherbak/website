@@ -3,8 +3,14 @@
 import { useTheme } from "next-themes";
 import { Sun, Moon, Monitor } from "lucide-react";
 import { useEffect, useState } from "react";
+import LanguageSwitcher from "./languageswitcher";
+import { Locale } from "@/lib/i18n";
 
-export default function ThemeSwitcher() {
+type ThemeSwitcherProps = {
+  locale: Locale;
+};
+
+export default function ThemeSwitcher({ locale }: ThemeSwitcherProps) {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -24,12 +30,15 @@ export default function ThemeSwitcher() {
   if (!mounted) return null;
 
   return (
-    <button
-      onClick={cycleTheme}
-      className="absolute right-5 top-5 p-5 rounded-full hover:bg-neutral-200 dark:hover:bg-neutral-700 transition cursor-pointer"
-      aria-label="Toggle theme"
-    >
-      <Icon className="w-5 h-5" />
-    </button>
+    <div className="absolute right-5 top-5 flex items-center gap-3">
+      <LanguageSwitcher locale={locale} />
+      <button
+        onClick={cycleTheme}
+        className="p-5 rounded-full hover:bg-neutral-200 dark:hover:bg-neutral-700 transition cursor-pointer"
+        aria-label="Toggle theme"
+      >
+        <Icon className="w-5 h-5" />
+      </button>
+    </div>
   );
 }

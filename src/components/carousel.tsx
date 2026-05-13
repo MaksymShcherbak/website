@@ -7,8 +7,13 @@ import { projects, Project } from "../data/data";
 import { ChevronLeft, ChevronRight, Globe } from "lucide-react";
 import IconLabel from "./iconlabel";
 import ImageModal from "./imagemodal";
+import { Locale, t } from "@/lib/i18n";
 
-export default function ProjectCarousel() {
+type ProjectCarouselProps = {
+  locale: Locale;
+};
+
+export default function ProjectCarousel({ locale }: ProjectCarouselProps) {
   const [mounted, setMounted] = useState(false);
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -98,7 +103,7 @@ export default function ProjectCarousel() {
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex">
           {projects.map((p) => (
-            <div key={p.title} className="min-w-full p-4">
+            <div key={p.title.en} className="min-w-full p-4">
               <div className="h-full">
                 {p.imgs && (
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 mb-4">
@@ -114,7 +119,7 @@ export default function ProjectCarousel() {
                       >
                         <Image
                           src={`/gallery/${img.src}`}
-                          alt={img.name}
+                          alt={img.name[locale]}
                           fill
                           className="object-cover"
                         />
@@ -126,10 +131,10 @@ export default function ProjectCarousel() {
                 <h3 className="text-xl font-bold mb-2">
                   {p.website ? (
                     <a href={p.website} target="_blank" className="underline">
-                      {p.title}
+                      {p.title[locale]}
                     </a>
                   ) : (
-                    <>{p.title}</>
+                    <>{p.title[locale]}</>
                   )}
                   {p.website && p.repo && (
                     <>
@@ -151,12 +156,12 @@ export default function ProjectCarousel() {
 
                 <p
                   className="text-base text-neutral-700 dark:text-neutral-300 mb-4"
-                  dangerouslySetInnerHTML={{ __html: p.description }}
+                  dangerouslySetInnerHTML={{ __html: p.description[locale] }}
                 />
 
                 <ul className="list-disc list-inside text-neutral-700 dark:text-neutral-300 mb-4 space-y-1">
                   {p.points.map((point, idx) => (
-                    <li key={idx}>{point}</li>
+                    <li key={idx}>{point[locale]}</li>
                   ))}
                 </ul>
 
@@ -172,7 +177,7 @@ export default function ProjectCarousel() {
                 </div>
 
                 <div className="flex flex-wrap gap-2 mb-4 items-center">
-                  <p>Made With: </p>
+                  <p>{t(locale, "madeWith")}</p>
                   {p.tech.map((t) => (
                     <IconLabel label={t} key={t} />
                   ))}
@@ -185,13 +190,13 @@ export default function ProjectCarousel() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Website
+                      {t(locale, "website")}
                     </a>
                     <span className=" text-neutral-700 dark:text-neutral-300">
                       {" | "}
                     </span>
                     <a href={p.repo} target="_blank" rel="noopener noreferrer">
-                      Repository
+                      {t(locale, "repository")}
                     </a>
                   </p>
                 )}
@@ -218,6 +223,7 @@ export default function ProjectCarousel() {
       {thumbnailImageIndex !== null && thumbnailProject !== null && (
         <ImageModal
           img={thumbnailProject.imgs[thumbnailImageIndex]}
+          locale={locale}
           closeModal={() => {
             setThumbnailImageIndex(null);
             setThumbnailProject(null);

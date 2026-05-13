@@ -1,22 +1,29 @@
 {
   "soft": [
-    "Problem Solving",
-    "Teamwork",
-    "Creativity",
-    "Adaptability",
-    "Communication",
-    "Attention to Detail"
+    { "en": "Problem Solving", "cz": "Řešení problémů" },
+    { "en": "Critical Thinking", "cz": "Kritické myšlení" },
+    { "en": "Teamwork", "cz": "Týmová práce" },
+    { "en": "Adaptability", "cz": "Přizpůsobivost" },
+    { "en": "Communication", "cz": "Komunikace" },
+    { "en": "Attention to Detail", "cz": "Pozornost k detailům" },
+    { "en": "Taking Initiative", "cz": "Iniciativa" }
   ],
   "hard": [
-    "Full-Stack Web Development",
-    "Machine Learning and Neural Networks",
-    "API Development",
-    "System Design",
-    "Refactoring",
-    "Debugging",
-    "Database Design",
-    "Testing",
-    "Deploying"
+    {
+      "en": "Full-Stack Web Development",
+      "cz": "Full-Stack vývoj webových aplikací"
+    },
+    {
+      "en": "Machine Learning and Neural Networks",
+      "cz": "Strojové učení a neuronové sítě"
+    },
+    { "en": "API Development", "cz": "Vývoj API" },
+    { "en": "System Design", "cz": "Návrh systémů" },
+    { "en": "Refactoring", "cz": "Refaktorizace" },
+    { "en": "Debugging", "cz": "Ladění" },
+    { "en": "Database Design", "cz": "Návrh databází" },
+    { "en": "Testing", "cz": "Testování" },
+    { "en": "Deploying", "cz": "Nasazování" }
   ],
   "tech": [
     "JavaScript",
