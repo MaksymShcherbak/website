@@ -7,7 +7,7 @@ type OutroProps = {
 
 export default function Outro({ locale }: OutroProps) {
   return (
-    <div className="flex flex-col md:flex-row items-center gap-6">
+    <div className="flex flex-col md:flex-row items-center gap-6 mb-3">
       <div className="text-1lg md:text-xl">
         <p className="pb-5">{t(locale, "thankYou")}</p>
         <p
@@ -17,12 +17,6 @@ export default function Outro({ locale }: OutroProps) {
         <p>
           {t(locale, "feelFree")}
           <span className="text-neutral-500 underline decoration-dotted">
-            <a href="mailto:maxim.shherbak@gmail.com">
-              maxim.shherbak@gmail.com
-            </a>
-          </span>{" "}
-          {t(locale, "or")}
-          <span className="text-neutral-500 underline decoration-dotted">
             <a
               href="https://www.linkedin.com/in/maksym-shcherbak-11159b3a7/"
               target="_blank"
@@ -30,12 +24,18 @@ export default function Outro({ locale }: OutroProps) {
             >
               LinkedIn
             </a>
+          </span>{" "}
+          {t(locale, "or")}
+          <span className="text-neutral-500 underline decoration-dotted">
+            <a href="mailto:maxim.shherbak@gmail.com">
+              maxim.shherbak@gmail.com
+            </a>
           </span>
           .
         </p>
         <p className="pt-2">{t(locale, "connect")}</p>
       </div>
-      <div className="w-full max-w-md mx-auto">
+      <div className="w-full max-w-md mx-auto hidden">
         <Image
           src="/hire.png"
           alt="Hire Me Illustration"

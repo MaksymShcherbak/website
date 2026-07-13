@@ -31,7 +31,7 @@ export default function Home({ locale }: HomeProps) {
         </section>
 
         <section className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold underline decoration-dotted mb-1 md:mb-0">
+          <h2 className="text-3xl font-bold underline decoration-dotted mb-2">
             {t(locale, "hireMe")}
           </h2>
           <Outro locale={locale} />

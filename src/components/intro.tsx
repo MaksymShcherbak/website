@@ -33,10 +33,12 @@ export default function Intro({ locale }: IntroProps) {
   }, [mounted]);
 
   const paragraphs = [
-    <span
-      key="intro-1"
-      dangerouslySetInnerHTML={{ __html: t(locale, "introParagraph1") }}
-    />,
+    <>
+      <span
+        key="intro-1"
+        dangerouslySetInnerHTML={{ __html: t(locale, "introParagraph1") }}
+      />
+    </>,
     <span
       key="intro-2"
       dangerouslySetInnerHTML={{ __html: t(locale, "introParagraph2") }}
@@ -82,10 +84,10 @@ export default function Intro({ locale }: IntroProps) {
             </div>
             <div className="bubble-back absolute w-full h-full backface-hidden rotate-y-180 rounded-full overflow-hidden border-4 border-white shadow-md  bg-white dark:bg-neutral-700">
               <Image
-                src="/code.png"
+                src="/icons/sap.webp"
                 alt="code"
                 fill
-                className="object-cover p-5"
+                className="object-contain p-5"
               />
             </div>
           </div>
