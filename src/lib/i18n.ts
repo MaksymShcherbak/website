@@ -10,19 +10,19 @@ export const translations = {
     or: " or write to me at ",
     connect: "I look forward to connecting!",
     introHeading:
-      "SAP Developer | Full-Stack Software Engineer | JS, TS, Python, Rust",
+      "SAP Developer | Full-Stack Engineer | JS, TS, Python",
     introParagraph1:
-      "Hi! I am a Software Developer, currently based in the Czech Republic 🇨🇿. Taking my first steps in enterprise software development at SAP.",
+      "Hi! I am just a guy taking my first steps in <b>Enterprise Software Development at SAP</b>. I am currently based in Brno, Czech Republic 🇨🇿.",
     introParagraph2:
-      "I am committed to growing within the <b>SAP ecosystem</b>: learning <b>ABAP</b>, <b>S/4HANA</b>, <b>SAP BTP</b> and everything that comes with enterprise-scale development.",
+      "My background is in <b>Full-Stack Web Development</b>,  with additional experience in <b>AI Systems</b>, <b>Databases</b> and <b>DevOps</b>. I enjoy building clear, elegant and maintainable software and always commited to learn new things and topics.",
     introParagraph3:
-      "My background is in <b>Full-Stack Web Development</b>, with additional experience in <b>AI Systems</b>, <b>Databases</b> and <b>DevOps</b>. I enjoy building clear, performant and maintainable software.",
+      "I have <b>2+ years of teaching experience</b> as well. Working with kids and teenagers has sharpened my communication skills and ability to explain technical concepts clearly. I am a curious, optimistic person who just wants to enjoy life and make the world a better place.",
     introParagraph4pre:
-      "I adapt easily to new situations and teams. I work with a variety of programming languages, and my favourite ones are ",
+      "I worked with a variety of programming languages. My favourite ones are ",
     introParagraph4post:
       " for their strong type safety and reliability.",
     softSkills: "Soft Skills",
-    professionalSkills: "Professional Skills",
+    professionalSkills: "Professional (Hard) Skills",
     technologies: "Technologies",
     madeWith: "Made With:",
     website: "Website",
@@ -43,24 +43,24 @@ export const translations = {
     or: " nebo mi napište na ",
     connect: "Těším se na spojení!",
     introHeading:
-      "SAP Developer | Full-Stack softwarový inženýr | JS, TS, Python, Rust",
+      "SAP Developer | Full-Stack Engineer | JS, TS, Python",
     introParagraph1:
-      "Ahoj! Jsem softwarový vývojář, aktuálně působící v České republice 🇨🇿. Dělám první kroky v oblasti enterprise software development v SAP.",
+      "Ahoj! Jsem jen kluk, který dělá své první kroky v oblasti <b>vývoje podnikového softwaru v SAP</b>. Aktuálně sídlím v Brně v České republice 🇨🇿.",
     introParagraph2:
-      "Zaměřuji se na růst v rámci ekosystému <b>SAP</b>: učím se <b>ABAP</b>, <b>S/4HANA</b>, <b>SAP BTP</b> a vše, co patří k vývoji v enterprise měřítku.",
+      "Moje zázemí je ve <b>Full-Stack vývoji webu</b> s dalšími zkušenostmi v oblasti <b>AI systémů</b>, <b>databází</b> a <b>DevOps</b>. Baví mě vytvářet přehledný, elegantní a udržitelný software a jsem vždy odhodlán učit se nové věci a témata.",
     introParagraph3:
-      "Mým zázemím je <b>Full-Stack Web Development</b>, s další zkušeností v oblasti <b>AI systémů</b>, <b>databází</b> a <b>DevOps</b>. Rád vytvářím přehledný, výkonný a udržitelný software.",
+      "Mám také <b>více než 2 roky zkušeností s výukou</b>. Práce s dětmi a dospívajícími mi zostřila komunikační schopnosti a schopnost srozumitelně vysvětlovat technické koncepty. Jsem zvědavý a optimistický člověk, který si chce prostě užívat života a dělat svět lepším místem.",
     introParagraph4pre:
-      "Snadno se přizpůsobuji novým situacím a týmům. Pracuji s různými programovacími jazyky a mezi mé oblíbené patří ",
+      "Pracuju s řadou programovacích jazyků. Oblíbenými jsou ",
     introParagraph4post:
-      " pro jejich silnou typovou bezpečnost a spolehlivost.",
+      " pro jejich silnou typovou bezpečností a spolehlivost.",
     softSkills: "Měkké dovednosti",
-    professionalSkills: "Profesní dovednosti",
+    professionalSkills: "Profesní (hard) dovednosti",
     technologies: "Technologie",
-    madeWith: "Vytvořeno s:",
+    madeWith: "Vytvořeno pomocí:",
     website: "Web",
     repository: "Repozitář",
-    switchToEnglish: "Přepnout do angličtiny",
+    switchToEnglish: "Switch to English",
     switchToCzech: "Přepnout do češtiny",
     languageLabel: "Přepínač jazyka",
     footer: "Postaveno v roce 2026 pomocí Next.js, TypeScript a Tailwind CSS",

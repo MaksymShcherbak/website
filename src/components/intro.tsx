@@ -43,10 +43,6 @@ export default function Intro({ locale }: IntroProps) {
       key="intro-2"
       dangerouslySetInnerHTML={{ __html: t(locale, "introParagraph2") }}
     />,
-    <span
-      key="intro-2"
-      dangerouslySetInnerHTML={{ __html: t(locale, "introParagraph3") }}
-    />,
     <>
       {t(locale, "introParagraph4pre")}
       <Image
@@ -67,6 +63,10 @@ export default function Intro({ locale }: IntroProps) {
       <b>TypeScript</b>
       {t(locale, "introParagraph4post")}
     </>,
+    <span
+      key="intro-2"
+      dangerouslySetInnerHTML={{ __html: t(locale, "introParagraph3") }}
+    />,
   ];
 
   return (
