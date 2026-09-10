@@ -138,9 +138,9 @@ export default function ProjectCarousel({ locale }: ProjectCarouselProps) {
                   )}
                   {p.website && p.repo && (
                     <>
-                      <a href={p.website} target="_blank">
+                      {/*<a href={p.website} target="_blank">
                         <Globe className="object-cover w-[32px] h-[32px] inline-block ml-2 mb-2" />
-                      </a>
+                      </a>*/}
                       <a href={p.repo} target="_blank">
                         <Image
                           src="/github.svg"
